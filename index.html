@@ -1,0 +1,51 @@
+<html>
+<head>
+
+	<title>AI Video Surveillance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="background_video.jpg">
+  <!--heading-->
+  <h2 class="btn btn-danger heading">AI Video Surveillance</h2>
+  <br><br>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <center>
+    <!--button to start the video and the object detection-->
+    <button onclick="start()" class="btn btn-success" id="start">Start</button>
+  </center>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <center>
+    <!--tag to display the no. of object detected-->
+    <h3 class="btn btn-warning" id="no_of_objects"></h3>
+    <br><br>
+    <!--status of object detection-->
+    <h3 class="btn btn-success" id="status"></h3>
+  </center>
+  </div>
+
+  <div class="copy_right_footer">
+    Developed By : Srijoni Baisya
+  </div>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
